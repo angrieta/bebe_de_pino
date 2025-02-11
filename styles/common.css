@@ -1,0 +1,165 @@
+header{
+    width: 1920px; height: 110px;
+    background-color: #fff; align-content: center;
+    z-index: 600;
+    position: fixed; left: 0; top: 0;
+}
+header .inner{
+    width: 1680px; margin: 0 auto;   
+}
+header .inner .top_header{
+    display: flex; align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+header .inner .top_header .logo{
+    position: relative; left: 45%;
+}
+header .inner .top_header .logo img{}
+header .inner .top_header .top_right_menu{
+    display: flex;
+}
+header .inner .top_header .top_right_menu a:last-child::after{display:none;}
+header .inner .top_header .top_right_menu a::after{
+    display: inline-block; content: '';
+    width: 1px; height: 10px; 
+    background-color: #222;
+    margin: 0 8px;
+}
+header .inner .top_header .top_right_menu a{
+    font-size: 0.9375rem;
+}
+header .inner .btm_header {
+    display: flex; justify-content: space-between; position: relative;
+    height: 50px;
+    align-items: center;
+}
+header .inner .btm_header .btm_left_menu{}
+header .inner .btm_header .btm_left_menu img{}
+header .inner .btm_header .btm_center_menu {position: absolute; left: 31.5%;}
+header .inner .btm_header .btm_center_menu a{
+    font-size: 0.9375rem;
+    margin-right: 33px;
+}
+header .inner .btm_header .btm_center_menu a:last-child{margin-right: 0px;}
+header .inner .btm_header .btm_center_menu a:hover{
+    border-bottom:1px solid #222;
+}
+header .inner .btm_header .btm_rigth_menu{}
+header .inner .btm_header .btm_rigth_menu a{
+    padding-left: 15px;
+}
+header .inner .btm_header .btm_rigth_menu a img{}
+
+/* search 버튼 시작 */
+.search_aria {
+    position: fixed; left: 0; top: 110px;
+    z-index: 600;
+    width: 1920px;
+    height: 440px;
+    background-color: #fff;
+    align-content: center;
+}
+.search_aria .search_inner {
+    width: 440px;
+    margin: 0 auto;
+}
+.search_aria .search_inner form {
+    display: flex; align-items: center;
+    position: relative;
+}
+.search_aria .search_inner input {
+    width: 440px;
+    padding: 10px 0;
+    font-size: 1.375rem;
+    border-bottom: 2px solid #222;
+}
+.search_aria .search_inner form p {
+    position: absolute; right: 0; top: 10px;
+}
+.search_aria .search_inner .btm_contents {
+    display: flex; justify-content: space-between;
+}
+.search_aria .search_inner .btm_contents > div{
+    display: flex; flex-flow: column nowrap;
+    width: 200px;
+}
+.search_aria .search_inner .btm_contents > div h3{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding: 30px 0 20px 0;
+}
+.search_aria .search_inner .btm_contents > div a{
+    padding-bottom: 20px;
+}
+.search_aria .search_inner .btm_contents > div a:nth-child(2),
+.search_aria .search_inner .btm_contents > div a:nth-child(3),
+.search_aria .search_inner .btm_contents > div a:nth-child(4){
+    color: #E84E1B;
+}
+
+
+
+/* search 버튼 종료 */
+
+
+
+/* footer */
+footer {
+    width: 1920px;
+    height: 354px;
+    background-color: #fff;
+    color: #222;
+}
+footer .footer_top{
+    border-top:1px solid #222;
+    border-bottom:1px solid #C9C9C9;
+}
+footer .footer_top .footer_menu{
+    display: flex;
+    width: 1680px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+footer .footer_top .footer_menu .left_menu{}
+footer .footer_top .footer_menu .left_menu a:hover{
+    border-bottom:1px solid #222;
+}
+footer .footer_top .footer_menu .left_menu a{
+    color: #222;
+    margin-right: 38px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+footer .footer_top .footer_menu .left_menu a:last-child{
+    margin-right: 0;
+}
+footer .footer_top .footer_menu .right_menu{
+    
+}
+footer .footer_top .footer_menu .right_menu a:hover{
+    border-bottom:1px solid #222;
+}
+footer .footer_top .footer_menu .right_menu a{
+    color: #222;
+    margin-left: 38px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+footer .footer_btm {
+    display: flex;
+    width: 1680px;
+    margin: 0 auto;
+    position: relative;
+}
+footer .footer_btm h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+footer .footer_btm address{font-size: 0.8125rem; margin-bottom: 10px;}
+footer .footer_btm p {font-size: 0.8125rem; margin-bottom: 10px;}
+footer .footer_btm .footer_btm_right {position: absolute; right: 0; bottom: 0;}
+footer .footer_btm .footer_btm_right a {padding-left: 15px;}
