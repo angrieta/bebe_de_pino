@@ -88,7 +88,7 @@ $('.sale .category_column a').click(function(e){
     $('.category_column a').removeClass('active');
     $(this).addClass('active');  
 })
-
+$('.search_aria').hide();
 $('.inner .search_btn').mouseenter(function(){
     //$('.header_menu').show();
     $('.search_aria').slideDown(); //fadeIn 도 사용가능
