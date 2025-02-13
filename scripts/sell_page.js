@@ -43,25 +43,18 @@ $('.size_page').click(function(e){
 const valueMath = document.querySelector('#num');
 const numPlus = document.querySelector('#numPlus');
 const numMinus = document.querySelector('#numMinus');
+const totalPrice = document.querySelector('#total_price_math');
 console.log(valueMath, numPlus);
 numPlus.addEventListener('click',function(){
-    //3. 변경대상의 객체, 속성을 잘 구분하여 문법에 맞게 작성하기
-    //기존 수량의 값(오른쪽)에 1을 더해서 수량칸(왼쪽)에 대입하기
     valueMath.value = Number(valueMath.value)+1 
     console.log(typeof(num.value));
+    totalPrice.innerHTML = valueMath.value*50400
 })
 numMinus.addEventListener('click',function(){
     if (valueMath.value > 1) {
         valueMath.value = Number(valueMath.value)-1
     }
+    totalPrice.innerHTML = valueMath.value*50400
 })
-$('.check_on').hide()
-$('.right_contents a').click(function(e){
-    e.preventDefault()
-    $('.check_out').hide()
-    $('.check_on').show()
-})
-sub4.addEventListener('mouseenter',()=>{
-    main1.innerHTML = '<img src="./images/sell_page/seb_menu_004.jpg" alt="">'
-})
+
 
