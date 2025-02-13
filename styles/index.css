@@ -74,12 +74,12 @@ main .sell .slide_btn {
 main .sell .slide_btn .swiper-button-next{
     top: -250px; right: 50px;
     transform: scale(60%);
-    color: #222;
+    color: #E84E1B;
 }
 main .sell .slide_btn .swiper-button-prev{
     top: -250px; left: 50px;
     transform: scale(60%);
-    color: #222;
+    color: #E84E1B;
 }
 main .sell .more_btn{
     width: 200px;
@@ -229,11 +229,11 @@ main .event .event_container a:hover .event_img1,
 main .event .event_container a:hover .event_img2,
 main .event .event_container a:hover .event_img3
 {
-    animation: imgAni 0.5s;
+    animation: imgAni 0.5s forwards;
 }
 @keyframes imgAni {
-    0% {transform: scale(0.9);}
-    100% {transform: scale(1);}
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
 }
 main .event .event_container .event_img1{
     width: 540px; height: 540px;
@@ -285,12 +285,13 @@ main .event .event_container .event_img3{
     padding: 20px 0;
     padding-left: 20px;
     color: #A5A5A5;
-    border-bottom: 1px solid #A5A5A5;
 }
 .sale_area .category_column .active{
     background-color: #E84E1B;
-    color: #Fff;
+    color: #fff;
     border-bottom-right-radius: 20px;
+    border: 2px solid #E84E1B;
+    border-bottom:0 ;
 }
 .sale_area .sale_container{
     width: 1298px;
@@ -385,41 +386,29 @@ main .event .event_container .event_img3{
 }
 .instar .slide_btn .swiper-button-next{
     top: -170px !important;
+    color: #E84E1B !important;
 }
 .instar .slide_btn .swiper-button-prev{
     top: -170px !important;
+    color: #E84E1B !important;
 }
-.quick_menu{
-    width: 1680px;
+
+/* 하단 배너 */
+.btm_bnr {
+    background-color: #E84E1B;
+}
+.btm_bnr .bnr_inner {
+    width: 307px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 120px;
+    padding: 50px 0;
 }
-.quick_menu a{
-    width: 530px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
-    background-color: #F5F5F5;
-}
-.quick_menu a .left_contents{
-    display: flex;
-    align-items: center;
-}
-.quick_menu a .left_contents .text{
-    margin-left: 20px;
-}
-.quick_menu a .membership_img{
-    background-image: url(../images/index/membership_logo.png);
-    width: 50px; height: 50px;
-}
-.quick_menu a .offline_img{
-    background-image: url(../images/index/location_logo.png);
-    width: 50px; height: 50px;
-}
-.quick_menu a .event_img{
-    background-image: url(../images/index/event_logo.png);
-    width: 50px; height: 50px;
+.btm_bnr .btm_bnr_logo {}
+.btm_bnr .btm_bnr_logo img {}
+.btm_bnr a {
+    color: #fff;
+    background: #222;
+    padding: 12px 10px;
+    display: inline-block;
+    width: 307px;
+    text-align: center;
 }

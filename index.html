@@ -19,7 +19,7 @@
     <header>
         <div class="inner">
             <div class="top_header">
-                <a class="logo" href="./index.html"><h1><img src="./images/header/Frame 1.png" alt="메인페이지로 가기"></h1></a>
+                <a class="logo" href="./index.html"><h1><img src="./images/header/rogo.png" alt="메인페이지로 가기"></h1></a>
                 <div class="top_right_menu">
                     <a href="#">로그인</a>
                     <a href="#">마이페이지</a>
@@ -47,10 +47,11 @@
         </div>
     </header>
     <!-- 헤더 종료 -->
+    <!-- 검색 기능 시작  -->
     <div class="search_aria">
         <div class="search_inner">
-            <form action="#" method="get" id="userSearch">
-                <input type="text" name="" id="userSearch" maxlength="30" placeholder="검색어를 입력해주세요.">
+            <form action="#" method="get" id="Search">
+                <input type="text" name="userSearch" id="userSearch" maxlength="30" placeholder="검색어를 입력해주세요.">
                 <p><img src="./images/header/ico_search_large.png" alt=""></p>
             </form>
             <div class="btm_contents">
@@ -77,6 +78,99 @@
             </div>
         </div>
     </div>
+    <!-- 검색 기능 시작  -->
+    <!-- 메뉴 카테고리 시작  -->
+    <div class="header_menu">
+        <a href="#" class="menu_close"><img src="./images/header/close.png" alt=""></a>
+        <ul class="menu_box">
+            <li>
+                <div class="menu-item"><a href="#">전체보기</a></div>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">신상품</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">2025 봄</a></li>
+                    <li><a href="#">베이비</a></li>
+                    <li><a href="#">키즈</a></li>
+                    <li><a href="#">신생아</a></li>
+                    <li><a href="#">디즈니</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">BEST</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">후드티</a></li>
+                    <li><a href="#">티셔츠</a></li>
+                    <li><a href="#">바람막이</a></li>
+                    <li><a href="#">원피스</a></li>
+                    <li><a href="#">맨투맨</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">신생아</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">울오버</a></li>
+                    <li><a href="#">허니베어</a></li>
+                    <li><a href="#">하트제이미</a></li>
+                    <li><a href="#">브룩스베이비</a></li>
+                    <li><a href="#">레이첼</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">베이비</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">수트&드레스</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">패딩</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">키즈</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">수트&드레스</a></li>
+                    <li><a href="#">아우터</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">언더웨어</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">언더웨어</a></li>
+                    <li><a href="#">파자마</a></li>
+                    <li><a href="#">라운지웨어</a></li>
+                    <li><a href="#">패밀리웨어</a></li>
+                    <li><a href="#">액세서리</a></li>
+                    <li><a href="#">펫웨어</a></li>
+                    <li><a href="#">세일</a></li>
+                    <li><a href="#">아울렛</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">액세서리</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">양말</a></li>
+                    <li><a href="#">모자</a></li>
+                    <li><a href="#">스카프&턱받이</a></li>
+                    <li><a href="#">헤어 액세서리</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="menu-item"><a href="#">세일</a><a href="#">+</a></div>
+                <ul class="submenu">
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">수트&드레스</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">패딩</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 메뉴 카테고리 종료  -->
     <!-- main 시작 -->
     <main>
         <!-- 메인배너 시작 -->
@@ -113,7 +207,7 @@
             <div class="swiper new_container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_001.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -130,7 +224,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide2">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_002.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -147,7 +241,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide3">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_003.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -164,7 +258,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide4">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_004.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -181,7 +275,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide5">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_005.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -198,7 +292,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide1">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_001.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -215,7 +309,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide2">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_002.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -232,7 +326,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide3">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_003.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -249,7 +343,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide4">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_004.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -266,7 +360,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide slide5">
-                        <a href="#">
+                        <a href="./sell_page.html">
                             <div><img src="./images/index/new_005.png" alt=""></div>
                             <h3>애기후드집업재킷</h3>
                             <div class="sale_price">
@@ -330,7 +424,7 @@
                     <div class="swiper best_aria">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide4">
-                                <a href="#" class="item_bg4">
+                                <a href="./sell_page.html" class="item_bg4">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -338,7 +432,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide5">
-                                <a href="#" class="item_bg5">
+                                <a href="./sell_page.html" class="item_bg5">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -346,7 +440,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide6">
-                                <a href="#" class="item_bg6">
+                                <a href="./sell_page.html" class="item_bg6">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -354,7 +448,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#" class="item_bg4">
+                                <a href="./sell_page.html" class="item_bg4">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -362,7 +456,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide5">
-                                <a href="#" class="item_bg5">
+                                <a href="./sell_page.html" class="item_bg5">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -370,7 +464,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide6">
-                                <a href="#" class="item_bg">
+                                <a href="./sell_page.html" class="item_bg">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -382,7 +476,7 @@
                     <div class="swiper best_aria">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <a href="#" class="item_bg1">
+                                <a href="./sell_page.html" class="item_bg1">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -390,7 +484,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#" class="item_bg2">
+                                <a href="./sell_page.html" class="item_bg2">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -398,7 +492,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#" class="item_bg3">
+                                <a href="./sell_page.html" class="item_bg3">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -406,7 +500,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide1">
-                                <a href="#" class="item_bg1">
+                                <a href="./sell_page.html" class="item_bg1">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -414,7 +508,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#" class="item_bg2">
+                                <a href="./sell_page.html" class="item_bg2">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -422,7 +516,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#" class="item_bg3">
+                                <a href="./sell_page.html" class="item_bg3">
                                     <div class="hide_text">
                                         <h3>애기후드집업재킷</h3>
                                         <span>50,400원</span>
@@ -493,7 +587,7 @@
                     <div class="swiper sale_container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_001.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -510,7 +604,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_002.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -527,7 +621,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_003.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -544,7 +638,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_004.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -561,7 +655,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide1">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_001.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -578,7 +672,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_002.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -595,7 +689,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_003.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -612,7 +706,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_004.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -633,7 +727,7 @@
                     <div class="swiper sale_container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_005.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -650,7 +744,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_006.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -667,7 +761,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_007.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -701,7 +795,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide1">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_005.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -718,7 +812,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_006.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -735,7 +829,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_007.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -752,7 +846,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#">
+                                <a href="./sell_page.html">
                                     <div><img src="./images/index/sale_008.png" alt=""></div>
                                     <h3>애기후드집업재킷</h3>
                                     <div class="sale_price">
@@ -1056,46 +1150,14 @@
             </div>
         </div>
         <!-- 인스타 종료 -->
-        <!-- 퀵메뉴 시작  -->
-        <div class="quick_menu">
-            <a href="#" class="quick membership">
-                <div class="left_contents">
-                    <div class="membership_img"></div>
-                    <div class="text">
-                        <h4>Membership</h4>
-                        <p>특별한 혜텍을 확인해보세요</p>
-                    </div>
-                </div>
-                <div class="right_contents">
-                    <img src="./images/index/right_arrow.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="offline membership">
-                <div class="left_contents">
-                    <div class="offline_img"></div>
-                    <div class="text">
-                        <h4>OFFLINE</h4>
-                        <p>오프라인에서 만나보세요.</p>
-                    </div>
-                </div>
-                <div class="right_contents">
-                    <img src="./images/index/right_arrow.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="event_box membership">
-                <div class="left_contents">
-                    <div class="event_img"></div>
-                    <div class="text">
-                        <h4>EVENT</h4>
-                        <p>다양한 이벤트를 확인해보세요.</p>
-                    </div>
-                </div>
-                <div class="right_contents">
-                    <img src="./images/index/right_arrow.png" alt="">
-                </div>
-            </a>
+        <!--하단배너 시작  -->
+        <div class="btm_bnr">
+            <div class="bnr_inner">
+                <div class="btm_bnr_logo"><img src="./images/index/btm_bnr_logo.png" alt=""></div>
+                <a href="#">더캐리 포인트 안내</a>
+            </div>
         </div>
-        <!-- 퀵메뉴 종료  -->
+        <!--하단배너 종료  -->
     </main>
     <!-- main 종료 -->
     <!-- footer 시작 -->

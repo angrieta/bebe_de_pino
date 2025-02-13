@@ -96,3 +96,32 @@ $('.inner .search_btn').click(function(){
 $('.search_aria').mouseleave(function(){
     $('.search_aria').hide();
 })
+/* 메뉴카테고리 시작 */
+$('.header_menu').show();
+$('.submenu').hide();
+$('.menu-item').click(function(){
+    $('.submenu').slideUp();
+    $(this).next('.submenu').slideDown();
+})
+$('.menu_close').click(function(){
+    $('.header_menu')
+    .animate({left:'-450px'},300)
+})
+$('.inner .btm_left_menu').click(function(){
+    $('.header_menu')
+    .animate({left:'0px'},300)
+})
+$('.menu-item a').removeClass('active');
+$('.menu-item a').click(function(e){
+    e.preventDefault()
+    $('.menu-item a').removeClass('active');
+    $(this).addClass('active');  
+})
+$('.menu-item a').click(function(e){
+    e.preventDefault()
+    $('.menu-item a').removeClass('active');
+    $(this).addClass('active');  
+})
+
+
+/* 메뉴카테고리 종료 */
