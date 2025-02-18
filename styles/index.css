@@ -1,13 +1,17 @@
 main{
+    max-width: 1920px;
     padding-top: 110px;
-    width: 1920px;
 }
 main .mainBnr{
 
 }
-main .mainBnr .swiper-wrapper{}
+main .mainBnr .swiper-wrapper{
+    max-width: 1920px;
+}
 main .mainBnr .swiper-wrapper .swiper-slide {}
-main .mainBnr .swiper-wrapper .swiper-slide img {width: 100%;}
+main .mainBnr .swiper-wrapper .swiper-slide img {
+    width: 100% ;
+}
 main .mainBnr .slide_bnr_btn {}
 main .mainBnr .slide_bnr_btn .swiper-button-next {
     right: 50px; color: #fff;
@@ -21,7 +25,7 @@ main .mainBnr .slide_bnr_btn .swiper-button-prev {
 /* 스와이퍼 공통 */
 main .sell {padding: 120px 0;}
 main .sell .category{
-    width: 1680px; margin: 0 auto;
+    max-width: 1680px; margin: 0 auto;
     padding: 20px 0 30px 0;
 }
 main .sell .category .active{
@@ -37,7 +41,7 @@ main .sell .category a{
     color: #A5A5A5;
 }
 main .sell .title {
-    width: 1680px; margin: 0 auto;
+    max-width: 1680px; margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -110,25 +114,30 @@ main .sell .more_view > p{
 main .new {}
 main .new .new_container {
     margin-top: 30px;
-    width: 1680px;
+    width: 100%;
+}
+main .new_container a div:nth-child(1) img {
+    width: 100%;
 }
 /* new 영역 종료 */
 /* 광고배너 시작 */
 .middle_banner {
     display: flex; 
-    width: 1920px; height: 600px;
+    max-width: 1920px; min-height: 600px;
     margin-bottom: 120px;
 }
 .middle_banner .title{
+    width: 100%; height: 600px;
     display: flex; flex-flow: column nowrap;
-    width: 960px !important;
-    height:600px !important;
     text-align: start; 
     background-color: #F5F5F5;
-    padding: 225px 0 0 217px;
+    align-items: center;
+}
+.center_container{
+    height: 100%;
+    align-content: center;
 }
 .middle_banner .title > h2{
-    width: 100%;
 }
 .middle_banner .title .sub_text{
     color: #E84E1B; margin-top: 10px;
@@ -144,66 +153,65 @@ main .new .new_container {
 .middle_banner .title .more_view p{
     text-align: center;
 }
+.middle_banner .banner_bg_main {
+    width: 100%;
+    background-image: url(../images/index/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+.middle_banner .banner_bg_main img {
+    width: 100%;
+}
 /* 광고배너 종료 */
 /* best 영역 시작 */
 .best {}
 .best .best_container {
     display: flex;
-    width: 1680px;
+    max-width: 1680px;
     margin: 0 auto;
+}
+.best .best_container .right_contents{
+    width: 61%; 
+    padding-left: 42px;
 }
 .best .best_container .best_main_bg {
     background-image: url(../images/index/best_bg_002.png);
-    width: 650px; height: 650px;
-    margin-right: 42px;
+    width: 39%; 
+    background-size: cover;
+    background-position-x:center ;
+    background-repeat: no-repeat;
 }
-.best .best_container .best_aria .swiper-wrapper {
-    width: 300px; height: 315px;
+.best .best_container .best_main_bg img {
 }
 .best .best_container .best_aria {margin-bottom: 20px;}
 .best .best_container .best_aria {
-    width: 988px; height: 315px;
 }
-.best .best_container .swiper-slide{
-}
-.best .best_container .slide1{
-    background-image: url(../images/index/best_000.jpg);
-    width: 300px; height: 315px;
-}
-.best .best_container .slide2{
-    background-image: url(../images/index/best_001.png);
-    width: 300px; height: 315px;
-}
-.best .best_container .slide3{
-    background-image: url(../images/index/best_002.png);
-    width: 300px; height: 315px;
-}
-.best .best_container .slide4{
-    background-image: url(../images/index/best_003.png);
-    width: 300px; height: 315px;
-}
-.best .best_container .slide5{
-    background-image: url(../images/index/best_004.png);
-    width: 300px; height: 315px;
-}
-.best .best_container .slide6{
-    background-image: url(../images/index/best_005.png);
-    width: 300px; height: 315px;
-}
+.best .best_container .swiper-slide{}
 .best .best_container .best_aria .swiper-slide:hover .hide_text{
     display: block;
     animation: itemHover 0.5s;
+}
+.best .best_container .hide_text .best_item_bg{
+    position: relative;
 }
 .best .best_container .hide_text{
     align-content: center;
     text-align: center;
     background-color: rgb(255, 255,255,0.5 );
+    width: 100%;
     height: 100%;
     display: none;
+    position: absolute; left: 0; top: 0;
 }
 .best .best_container .hide_text h3{
 }
 .best .best_container .hide_text span{
+}
+.best_aria .best_item_bg {
+
+}
+.best_aria .best_item_bg img{
+    width: 100%;
 }
 @keyframes itemHover {
     0% {transform: translateY(-315px);}
@@ -212,11 +220,12 @@ main .new .new_container {
 /* best 영역 종료 */
 /* event 영역 시작 */
 main .event{
-    width: 1920px;
+    max-width:1920px;
     background-image: url(../images/index/EVENT.png);
 }
 main .event_bg{
-    width: 1680px; margin: 0 auto;
+    max-width: 1680px; margin: 0 auto;
+    justify-content: space-between;
 }
 main .event_bg .title{padding-bottom: 30px; }
 main .event_bg .title h2{color: #fff;}
@@ -235,37 +244,27 @@ main .event .event_container a:hover .event_img3
     0% {transform: scale(1);}
     100% {transform: scale(1.1);}
 }
-main .event .event_container .event_img1{
-    width: 540px; height: 540px;
-    background-image: url(../images/index/event_001.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+main .event .event_container {
 }
-main .event .event_container .event_img2{
-    width: 540px; height: 540px;
-    background-image: url(../images/index/event_002.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+main .event .event_container .event_img1 img{
+    width: 95%;
 }
-main .event .event_container .event_img3{
-    width: 540px; height: 540px;
-    background-image: url(../images/index/event_003.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+main .event .event_container .event_img2 img{
+    width: 95%;
+}
+main .event .event_container .event_img3 img{
+    width: 95%;
 }
 
 /* event 영역 종료 */
 /* sale 영역 시작 */
 .sale_area {
-    width: 1920px;
+    max-width: 1920px;
     background-color: #f5f5f5;
     margin-top: 120px;
 }
 .sale_area .sale_contents{
-    width: 1680px;
+    max-width: 1680px;
     margin: 0 auto;
     display: flex;
 }
@@ -293,11 +292,22 @@ main .event .event_container .event_img3{
     border: 2px solid #E84E1B;
     border-bottom:0 ;
 }
-.sale_area .sale_container{
-    width: 1298px;
-    margin: 0 0px 0 30px;
+.sale_area .sale_container1 .swiper-slide {
+}
+.sale_area .right_container {
+    width: calc(100% - 300px);
+    padding-left: 58px;
+}
+.sale_area .swiper-slide{
+}
+.sale_area .swiper-slide div:nth-child(1) img{
+    width: 100%;
 }
 .sale_area .sale_container{
+    
+    margin-bottom: 20px
+}
+.sale_area .sale_container1{
     margin-bottom: 20px
 }
 /* sale 영역 종료 */
@@ -319,12 +329,15 @@ main .event .event_container .event_img3{
 /* 광고배너 종료 */
 /* review 시작 */
 .review{
-    width: 1920px;
+    max-width: 1920px;
 }
 .review .title{}
 .review .review_container{
-    width: 1680px;
+    width: 100%;
     margin: 30px auto 0;
+}
+.review .review_container .review_bg img{
+    width: 100%;
 }
 .review .review_container .review_bg{
     position: relative; bottom: -3px;
@@ -344,12 +357,12 @@ main .event .event_container .event_img3{
 .review .review_container .user_info{
     display: flex;
     border: 1px solid #CACACA;
-    width: 320px;
     justify-content: space-between;
     align-items: end;
     padding: 10px;
 }
 .review .review_container .user_id_count{
+    width: max-content;
     display: flex;
     align-items: end
 }
@@ -376,13 +389,16 @@ main .event .event_container .event_img3{
 }
 /* review 종료 */
 .instar {
-    width: 1920px;
+    max-width: 1920px;
     position: relative;
 }
 .instar .instar_container {
     padding-top: 30px;
-    width: 1680px !important;
+    max-width: 1680px !important;
     margin: 0 auto;
+}
+.instar .instar_container img {
+    width: 100%;
 }
 .instar .slide_btn .swiper-button-next{
     top: -170px !important;
@@ -398,7 +414,7 @@ main .event .event_container .event_img3{
     background-color: #E84E1B;
 }
 .btm_bnr .bnr_inner {
-    width: 307px;
+    max-width: 307px;
     margin: 0 auto;
     padding: 50px 0;
 }

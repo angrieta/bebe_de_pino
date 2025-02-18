@@ -1,6 +1,6 @@
 var bnr = new Swiper(".mainBnr", {
     autoplay:{
-        delay:3000, //다음 슬라이드전환까지 대기시간
+        delay:30000000, //다음 슬라이드전환까지 대기시간
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
     },
     loop:true,
@@ -8,6 +8,17 @@ var bnr = new Swiper(".mainBnr", {
         nextEl: ".mainBnr .swiper-button-next",
         prevEl: ".mainBnr .swiper-button-prev",
     },
+    breakpoints: {
+        1920: {
+            slidesPerView: 3, //1920이하 일때
+        },
+        1024: {
+            slidesPerView: 2,  //1024이하 일때
+        },
+        768: {
+          slidesPerView: 1, //768이하 일때
+        },
+    }    
 });
 var newContents = new Swiper(".new_container", {
     autoplay:{
@@ -15,8 +26,18 @@ var newContents = new Swiper(".new_container", {
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
     },
     loop:true,
-    slidesPerView: 5,
     spaceBetween: 12,
+    breakpoints: {
+        1920: {
+            slidesPerView: 5,  //1024이하 일때
+        },
+        1024: {
+            slidesPerView: 3,  //1024이하 일때
+        },
+        440: {
+          slidesPerView: 2, //768이하 일때
+        },
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -24,15 +45,45 @@ var newContents = new Swiper(".new_container", {
 });
 var best = new Swiper(".best_aria", {
     autoplay:{
+        delay:300000000, //다음 슬라이드전환까지 대기시간
+        disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
+    },
+    loop:true,
+    spaceBetween: 44,
+    slidesPerView:2,
+    breakpoints: {
+        1250: {
+            slidesPerView: 3,  //1024이하 일때
+        },
+        870: {
+          slidesPerView: 2, //768이하 일때
+        },
+        400: {
+          slidesPerView: 1, //768이하 일때
+        },
+    },
+});
+
+var sale = new Swiper(".sale_container", {
+    autoplay:{
         delay:3000, //다음 슬라이드전환까지 대기시간
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
     },
     loop:true,
-    slidesPerView: 3,
-    spaceBetween: 44,
+    spaceBetween: 20,
+    breakpoints: {
+        1250: {
+            slidesPerView: 4,  //1024이하 일때
+        },
+        871: {
+            slidesPerView: 2,  //1024이하 일때
+        },
+        470: {
+          slidesPerView: 3, //768이하 일때
+        },
+    },
 });
-
-var sale = new Swiper(".sale_container", {
+var sale = new Swiper(".sale_container1", {
     autoplay:{
         delay:3000, //다음 슬라이드전환까지 대기시간
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
@@ -47,24 +98,44 @@ var review = new Swiper(".review_container", {
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
     },
     loop:true,
-    slidesPerView: 5,
     spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1250: {
+            slidesPerView: 5,  //1024이하 일때
+        },
+        1024: {
+            slidesPerView: 3,  //1024이하 일때
+        },
+        400: {
+          slidesPerView:2, //768이하 일때
+        },
     },
 });
 var instar = new Swiper(".instar_container", {
     autoplay:{
-        delay:3000, //다음 슬라이드전환까지 대기시간
+        delay:33333333333333333, //다음 슬라이드전환까지 대기시간
         disableOnInteraction:false, // 사용자 상호작용 상관없이 계속 진행
     },
     loop:true,
-    slidesPerView: 5,
     spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1250: {
+            slidesPerView: 5,  //1024이하 일때
+        },
+        1024: {
+            slidesPerView: 3,  //1024이하 일때
+        },
+        400: {
+          slidesPerView: 2, //768이하 일때
+        },
     },
 });
 
