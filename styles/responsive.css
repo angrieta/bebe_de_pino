@@ -184,7 +184,7 @@
     header .inner .btm_header {
         display: flex;
         justify-content: space-between;
-        position: absolute; left: 0; top: 20%;
+        position: absolute; left: 0; top: 22%;
         width: 100% !important;
         padding: 0 15px;
         height: 50px;
@@ -433,6 +433,12 @@
 }
 @media screen and (max-width:500px){
     .top_header .logo img {
-        width: 80%;
+        width: 90%;
+    }
+    header .inner .btm_header .btm_rigth_menu a {
+        padding-left: 10px;
+    }
+    header .inner .btm_header .btm_rigth_menu a:first-child {
+        padding-left: 0;
     }
 }
