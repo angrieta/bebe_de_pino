@@ -352,7 +352,7 @@ main .sell_container .subBg img{
 .details_page{
     display: block;
     width: 1000px;
-    margin: 0 auto;
+    margin: 100px auto 0;
 }
 .details_page img{
     width: 1000px;
