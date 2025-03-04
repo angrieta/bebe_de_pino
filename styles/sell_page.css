@@ -5,35 +5,40 @@ main .sell_container{
     margin-bottom: 120px;
 }
 main .sell_container .sell_inner{
-    width: 1400px;
+    width: 100%;
+    padding: 0 120px;
     margin: 0 auto;
     display: flex;
 }
 main .sell_container .main_bg {
     margin-left: 32px;
+    width: 100%;
 }
 main .sell_container .main_bg img{
-    width: 632px;
-    height: 632px;
+    width: 100%;
 }
 main .sell_container .sell_inner{}
 main .sell_container .left_contents{
     display: flex;
+    width: 100%;
 }
-main .sell_container .sub_menu{}
+main .sell_container .sub_menu{
+    width: 17.3%;
+}
 main .sell_container .sub_menu .subBg{
     padding-bottom: 21px;
 }
-main .sell_container .subBg{}
+main .sell_container .subBg{
+}
 main .sell_container .subBg img{
-    width: 115px;
-    height: 107px;
+    width: 100%;
 }
 .right_contents{
-    width: 600px;
+    width: 90%;
+    align-content: center;
 }
 .right_contents .right_inner{
-    width: 480px; margin: 0 auto;
+    width: 75%; margin: 0 auto;
 }
 .right_contents .item_title{
 }
@@ -115,6 +120,7 @@ main .sell_container .subBg img{
 }
 .right_contents .middle_title li del{
     color: #979797;
+    font-size:1rem; font-weight: 600;
 }
 .right_contents .middle_title .transfer_price {
     margin-bottom: 20px;
@@ -200,6 +206,7 @@ main .sell_container .subBg img{
     padding: 5px 10px;
     border: 1px solid #C1C1C1;
     margin-right: 10px;
+    white-space: nowrap;
 }
 .right_contents .middle_title .select_size #no_9{}
 .right_contents .middle_title .select_size #no_11{}
@@ -218,6 +225,7 @@ main .sell_container .subBg img{
     text-align: center;
     padding: 10px 0;
     border: 1px solid #E8E8E8;
+    font-size:0.875rem; font-weight: 600;
 }
 .right_contents .buy_value{
     background-color: #F6F6F6;
@@ -241,6 +249,18 @@ main .sell_container .subBg img{
     background-color: #fff;
 }
 .right_contents .buy_value .box{}
+.right_contents .buy_value .value_btn{
+    display: flex; align-items: center;
+    justify-content: space-between;
+}
+.right_contents .buy_value .value_btn a{
+    font-size:0.625rem;
+    color: #fff;
+    background-color: #222; align-content: center;
+    display: inline; 
+    padding: 0 5px; height: 18px;
+    border-radius: 5px;
+}
 .right_contents .buy_value #numMinus {width: 28px; height: 28px;}
 .right_contents .buy_value #numMinus img{
     width: 14px;
@@ -286,18 +306,20 @@ main .sell_container .subBg img{
     margin: 20px 0;
 }
 .right_contents .buy_btn .top_buy .cart{
-    width: 140px;
+    width: 30%;
     display: inline-block;
     padding: 18px 0;
     border: 1px solid #222;
+    font-weight: 600;
 }
 .right_contents .buy_btn .top_buy .main_buy{
-    width: 320px;
+    width: 67%;
     display: inline-block;
     padding: 18px 0;
     background-color: #E84E1B;
     border: 1px solid #E84E1B;
     color: #fff;
+    font-weight: 700;
 }
 .right_contents .simple_buy{
     display: flex;
@@ -305,11 +327,12 @@ main .sell_container .subBg img{
 }
 .right_contents .simple_buy a{
     display: flex;
-    width: 230px;
+    width: 48%;
     text-align: center;
     padding: 10px 0;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
 }
 .right_contents .simple_buy a:first-child img:first-child{
     width: 26px;
@@ -321,9 +344,9 @@ main .sell_container .subBg img{
 .right_contents .simple_buy a span{
     display: block;
     align-content: center;
-    margin-left: 15px;
+    margin-left: 5px;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .right_contents .simple_buy a:first-child{
     background: #F9E000; 
@@ -334,7 +357,7 @@ main .sell_container .subBg img{
 
 /* 상품정보 영역 시작 */
 .item_information{
-    width: 1400px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     display: flex;
 }
 .item_information a{
@@ -343,33 +366,37 @@ main .sell_container .subBg img{
     padding: 20px 0;
     text-align: center;
     border-bottom: 1px solid #aaa;
+    font-weight: 600;
+    color: #aaa;
 }
 .item_information .active{
+    color: #E84E1B;
     border-bottom: 1px solid #E84E1B;
 }
 /* 상품정보 영역 종료 */
 /* 상세페이지 시작 */
 .details_page{
     display: block;
-    width: 1000px;
+    max-width: 1000px;
     margin: 100px auto 0;
 }
 .details_page img{
-    width: 1000px;
+    width: 100%;
 }
 /* 상세페이지 종료*/
 /* 사이즈 페이지 시작 */
 .size_page{
     display: block;
-    width: 850px;
+    max-width: 850px;
     margin: 0 auto;
+    padding-bottom: 120px;
 }
 .size_page img{
-    width: 850px;
+    width: 100%;
 }
 /* 사이즈 페이지 종료 */
 /* review 시작 */
-.review_aria{width: 1400px; margin: 0 auto;}
+.review_aria{max-width: 1400px; margin: 0 auto;}
 .review_aria .review{}
 .review_aria .review .revier_container{}
 .review_aria .review .revier_container .review_title{
@@ -378,14 +405,17 @@ main .sell_container .subBg img{
     padding: 15px 0;
     border-bottom: 1px solid #222;
 }
-.review_aria .review .revier_container .review_title h2{font-size:1.125rem; font-weight: 500}
+.review_aria .review .revier_container .review_title h2{
+    font-size:1.125rem; font-weight: 500;
+    white-space: nowrap; align-content: center;
+}
 .review_aria .review .revier_container .review_title a{color: #CACACA; font-size:0.875rem;}
 .review_aria .review .revier_container .star_point_aria{
     display: flex;
 }
 .review_aria .review .revier_container .star_point_aria .left_contents{
-    width: 500px; text-align: center;
-    padding: 50px 0;
+    width: 30%; text-align: center;
+    padding: 50px 20px;
     margin: 10.5px 0;
 }
 .review_aria .review .revier_container .star_point_aria .left_contents .top_aria{
@@ -403,8 +433,8 @@ main .sell_container .subBg img{
 }
 .review_aria .review .revier_container .star_point_aria .right_contents{
     align-content: center;
-    padding: 10.5px 0;
-    margin-left: 120px;
+    padding: 10.5px 30px;
+    width: 100%;
 }
 .review_aria .review .revier_container .star_point_aria .right_contents .like_best{
     display: flex; justify-content: space-between;
@@ -416,17 +446,17 @@ main .sell_container .subBg img{
     width: 80px;
 }
 .review_aria .review .revier_container .star_point_aria .right_contents .like_best .like_bar{
-    width: 537px; height: 14px; background-color: #EBEFF5;
+    width: 100%; height: 14px; background-color: #EBEFF5;
     display: block; border-radius: 20px;
     content: ''; margin-right: 15px;
 }
 .review_aria .review .revier_container .star_point_aria .right_contents .like_best .like_bar .bar{
-    width: 400px; height: 14px; background-color: #E84E1B;
+    width: 70%; height: 14px; background-color: #E84E1B;
     display: block; border-radius: 20px;
     content: ''; margin-right: 15px;
 }
 .review_aria .review .revier_container .star_point_aria .right_contents .like_best .like_bar .bar_gray{
-    width: 60px; height: 14px; background-color: #CECECE;
+    width: 20%; height: 14px; background-color: #CECECE;
     display: inline-block; border-radius: 20px;
     content: ''; margin-right: 15px;
 }
@@ -479,7 +509,7 @@ main .sell_container .subBg img{
     border-bottom:1px solid #A5A5A5 ;
 }
 .user_review .reviewleft{
-    width: 1104px;
+    width: 85%;
     border-right:1px solid #A5A5A5 ;
     margin-top: 25px;
 }
@@ -575,7 +605,7 @@ main .sell_container .subBg img{
     align-content: center;
 }
 .qnaTitle .right_contents .qnaArea label span{
-    font-size:0.875rem; font-weight: 6000;
+    font-size:0.875rem; font-weight: 600;
 }
 .qnaArea {
     display: flex;
@@ -618,16 +648,16 @@ main .sell_container .subBg img{
     border-bottom: 1px solid #A5A5A5;
 }
 .user_qna a p:nth-child(1){
-    width: 180px;
+    width: 15%
 }
 .user_qna a p:nth-child(2){
-    width: 800px;
+    width: 40%;
 }
 .user_qna a p:nth-child(3){
-    width: 420px;
+    width: 30%;
 }
 .user_qna a p:nth-child(4){
-    width: 180px;
+    width: 15%;
 }
 /* user Qna 종료 */
 

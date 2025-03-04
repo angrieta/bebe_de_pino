@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/sell_page.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/sell_page_responsive.css">
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/sell_page.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -236,11 +237,14 @@
                         </ul>
                         <div class="buy_value">
                             <div class="selling_info"><p>Gray/11호</p><a href="#" id="value_close"><img src="./images/sell_page/close.png" alt=""></a></div>
-                            <div class="box">
+                            <div class="value_btn">
+                                <div class="box">
                                 <button type="button" id="numMinus"><img src="./images/sell_page/minus.png" alt=""></button>
                                 <input type="number" name="num" id="num" value="1">
                                 <button type="button" id="numPlus"><img src="./images/sell_page/plus.png" alt=""></button>
                                 <!-- +버튼을 클릭할때마다 input의 value가 1씩 증가하기 --> 
+                            </div>
+                            <a href="#">쿠폰적용</a>
                             </div>
                         </div>
                         <div class="total_price">
