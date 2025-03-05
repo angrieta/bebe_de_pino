@@ -549,7 +549,10 @@
         padding-bottom: 10px !important;
     }
 }
-@media screen and (max-width:398px){
+@media screen and (max-width:400px){
     body > * {min-width: 400px;}
+    .header_menu {
+        min-width: 0;
+    }
 }
 
