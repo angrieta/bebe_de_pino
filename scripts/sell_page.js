@@ -39,7 +39,10 @@ $('.details_page').click(function(e){
 $('.size_page').click(function(e){
     e.preventDefault()
 })
-
+$('.search_close').click(function(){
+    $('.search_aria').hide();
+    }
+)
 const valueMath = document.querySelector('#num');
 const numPlus = document.querySelector('#numPlus');
 const numMinus = document.querySelector('#numMinus');

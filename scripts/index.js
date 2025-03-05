@@ -176,7 +176,7 @@ $('.menu-item').click(function(){
 })
 $('.menu_close').click(function(){
     $('.header_menu')
-    .animate({left:'-450px'},300)
+    .animate({left:'-50%'},300)
 })
 $('.inner .btm_left_menu').click(function(){
     $('.header_menu')
@@ -194,5 +194,8 @@ $('.menu-item a').click(function(e){
     $(this).addClass('active');  
 })
 
-
+$('.search_close').click(function(){
+    $('.search_aria').hide();
+    }
+)
 /* 메뉴카테고리 종료 */
