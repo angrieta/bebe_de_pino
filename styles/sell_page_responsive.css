@@ -415,6 +415,7 @@
         footer .footer_top .footer_menu .left_menu a{
             font-size: 0.6875rem;
             white-space: nowrap;
+            margin-right: 22px;
         }
         footer .footer_top .footer_menu .right_menu{  
             display: none;
@@ -460,6 +461,7 @@
 @media screen and (max-width:790px){
     main .sell_container .sell_inner{
         flex-flow: column nowrap;
+
     }
     .item_information{
         padding: 0 15px;
@@ -471,7 +473,7 @@
     .right_contents {
         width: 100%;
         align-content: center;
-        padding: 40px 0 0 0;
+        padding: 60px 0 0 0;
     }
     .right_contents .right_inner {
         width: 100%;
@@ -654,6 +656,7 @@
     }
     .qnaTitle .right_contents .qnaArea label {
         padding: 0 0 0 25px; 
+        display: flex; align-items: center;
     }
     .qnaTitle .right_contents .qnaArea label span {
         font-size:0.625rem; 
@@ -661,4 +664,13 @@
     .review_aria .review .revier_container .review_title a {
         font-size:0.5625rem;
     }
+    .user_review .reviewleft{
+        width: 99%;
+    }
+    .qnaTitle .checkbox_aria{
+        padding: 0;
+    }
+}
+@media screen and (max-width:400px){
+    body > * {min-width : 400px;}
 }

@@ -17,6 +17,7 @@ header .inner .top_header{
 }
 header .inner .top_header .logo{
     position: absolute; left: 50%; transform: translateX(-50%);
+    z-index: 999;
 }
 header .inner .top_header .logo img{}
 header .inner .top_header .top_right_menu{

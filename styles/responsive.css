@@ -246,8 +246,9 @@
         margin-bottom: 5px;
     }
     main .sell a h3 {
+        margin-top: 30px;
         font-size: 0.625rem;
-        text-align: left;
+        text-align: center;
     }
     main .sell a em {
         font-size: 0.6875rem;
@@ -349,7 +350,7 @@
     .sale_area .right_container {
         width: 100%;
         padding-left: 0px;
-        margin-top: 5px;
+        margin-top: 30px;
     }
     .best .best_container .best_main_bg {
         width: 50%;
@@ -430,6 +431,21 @@
     }
     header .inner .top_header .logo img {
     }
+    main .event .event_container h3 {
+        font-size:0.875rem;
+    }
+    main .event .event_container p {
+        font-size:0.625rem 
+    }
+    .banner_bg h2 {
+        font-size:1.25rem;
+    }
+    .review .review_container .user_info .user_info_row p:first-child {
+        font-size: 0.6875rem;
+    }
+    .review .review_container .total_point p {
+        white-space: nowrap;
+    }
 }
 @media screen and (max-width:500px){
     .top_header .logo img {
@@ -441,4 +457,7 @@
     header .inner .btm_header .btm_rigth_menu a:first-child {
         padding-left: 0;
     }
+}
+@media screen and (max-width:400px){
+    body > * {min-width: 400px;}
 }
