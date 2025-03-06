@@ -21,7 +21,12 @@ main .mainBnr .slide_bnr_btn .swiper-button-prev {
     left: 50px; color: #fff;
 }
 
-
+.top_arrow{
+    position: fixed; z-index: 999; right: 2%; bottom: 5%;
+}
+.top_arrow a img{
+    width: 60px;
+}
 
 /* 스와이퍼 공통 */
 main .sell {padding: 120px 0;}

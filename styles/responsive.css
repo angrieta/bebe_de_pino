@@ -6,7 +6,7 @@
     }
 }
 @media screen and (max-width:1250px) {
-    body > * {
+    body{
         width: 100%;
     }
     /* hedaer */
@@ -461,6 +461,9 @@
         .footer_btm_right a img{
             width: 28px;
         }
+        .top_arrow a img {
+            width: 40px;
+        }
     }
 }    
     /* =============================1행 반응형디자인(mobile) */
@@ -550,7 +553,7 @@
     }
 }
 @media screen and (max-width:400px){
-    body > * {min-width: 400px;}
+    body{min-width: 400px;}
     .header_menu {
         min-width: 0;
     }

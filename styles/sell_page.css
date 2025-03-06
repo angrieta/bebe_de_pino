@@ -36,6 +36,12 @@ main .sell_container .subBg{
 main .sell_container .subBg img{
     width: 100%;
 }
+.top_arrow{
+    position: fixed; z-index: 999; right: 2%; bottom: 5%;
+}
+.top_arrow a img{
+    width: 60px;
+}
 .right_contents{
     width: 90%;
     align-content: center;

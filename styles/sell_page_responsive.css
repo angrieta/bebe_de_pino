@@ -32,9 +32,10 @@
     }
 }
 @media screen and (max-width:1250px) {
-    body > * {
+    body{
         width: 100%;
     }
+    .top_arrow{ width: none !important;}
     /* search  */
     .search_aria .search_inner {
         width: 40%;
@@ -470,6 +471,9 @@
         .footer_btm_right a img{
             width: 28px;
         }
+        .top_arrow a img {
+            width: 40px;
+        }
     }
     /* =============================1행 반응형디자인(mobile) */
 @media screen and (max-width:500px){
@@ -770,5 +774,5 @@
     /* search  */
 }
 @media screen and (max-width:400px){
-    body > * {min-width : 400px;}
+    body {min-width : 400px;}
 }
